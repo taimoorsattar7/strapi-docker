@@ -17,8 +17,4 @@ RUN npm install && \
 ENV PORT 1337
 ENV HOST 127.0.0.1
 
-
-# RUN curl -I 127.0.0.1:1337/admin
-
-
-CMD NODE_ENV=development pm2 start server.js --no-autorestart
+CMD ["pm2-runtime", "server.js"]
