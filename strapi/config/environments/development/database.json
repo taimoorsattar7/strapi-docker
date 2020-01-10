@@ -1,0 +1,14 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "mongoose",
+      "settings": {
+        "uri": "mongodb://admins:admins@dev-article-shard-00-00-35qzl.gcp.mongodb.net:27017,dev-article-shard-00-01-35qzl.gcp.mongodb.net:27017,dev-article-shard-00-02-35qzl.gcp.mongodb.net:27017/test?ssl=true&replicaSet=DEV-article-shard-0&authSource=admin&retryWrites=true&w=majority"
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
