@@ -15,6 +15,6 @@ RUN npm install && \
 	strapi build
 
 ENV PORT 1337
-ENV HOST 127.0.0.1
+ENV HOST 0.0.0.0
 
 CMD ["pm2-runtime", "server.js"]
