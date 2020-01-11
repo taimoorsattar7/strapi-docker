@@ -1,18 +1,16 @@
 FROM mhart/alpine-node:12
 
-RUN npm install pm2@latest -g && \
-	npm install strapi -g
+RUN npm install pm2@latest -g
+RUN npm install strapi -g
 
 WORKDIR /srv/app
 
 VOLUME /srv/app
 
-RUN ls
-
 COPY ./strapi .
 
-RUN npm install && \
-	strapi build
+RUN npm install
+RUN strapi build
 
 ENV PORT 1337
 ENV HOST 0.0.0.0
