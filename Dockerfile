@@ -23,7 +23,6 @@ RUN npm install strapi -g
 
 
 COPY ./strapi .
-RUN chmod +x ./strapi
 
 RUN npm install
 RUN strapi build
